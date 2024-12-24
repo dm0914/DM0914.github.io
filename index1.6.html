@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <style>
+     
+     .sidebar {
+    width: 200px; 
+    height: 100vh;
+    overflow-y: auto;
+    padding-top: 20px; 
+    background-color: #f8f9fa;
+}
+   .no-wrap {
+            white-space: nowrap; 
+        }
+        .logo-container {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px; 
+        }
+        .navbar {
+            flex-direction: column !important; 
+            align-items: center; 
+            padding: 0; 
+        }
+        .navbar-toggler {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px; 
+        }
+        .navbar-nav {
+            flex-direction: column;
+            width: 100%; 
+            align-items: flex-start; 
+        }
+
+        .nav-item {
+            width: 50%;
+            text-align: left; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light sidebar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light px-0">
+                <div class="logo-container">
+                    <a class="navbar-brand d-block mx-auto" href="index.html">
+                        <img src="images/one.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav flex-column w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">首页</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index1.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                AI工具箱
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index1.1.html">AI写作与文本生成</a></li>
+                                <li><a class="dropdown-item" href="index1.2.html">AI绘画与图像生成</a></li>
+                                <li><a class="dropdown-item" href="index1.3.html">AI音频</a></li>
+                                <li><a class="dropdown-item" href="index1.4.html">AI视频</a></li>
+                                <li><a class="dropdown-item" href="index1.5.html">数字人</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item no-wrap" >
+                            <a class="nav-link" href="index2.html">AI行业报告</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- 右侧内容区 -->
+        <div class="col py-3">
+            <h2 class="text-center">AI辅助编程</h2>
+            <table class="mx-auto">
+                <tr>
+                    <th width="11%">名称</th>
+                    <th width="72%">简介</th>
+                    <th width="17%">链接</th>
+                </tr>
+   <tr>
+    <td>文心快码</td>
+    <td>百度推出的AI编程助手，基于文心大模型，提供代码的快速补齐、自然语言推荐代码等功能 </td>
+    <td><a href="https://wenxin.baidu.com/" target="_blank">文心快码</a></td>  
+  </tr>
+	<tr>
+    <td>Cursor</td>
+    <td>AI代码编辑器，快速进行编程和软件开发</td>
+    <td><a href="https://www.cursor.dev/" target="_blank">Cursor</a></td>  
+  </tr>
+	<tr>
+    <td>Windsurf</td>
+    <td>Codeium公司推出的AI编程工具，提供多文件编辑、自然语言命令执行、上下文感知等智能化功能</td>
+    <td><a href="https://www.codeium.com/" target="_blank">Windsurf</a></td>  
+  </tr>
+	<tr>
+    <td>CodeGeeX。</td>
+    <td>智谱AI推出的免费AI编程助手，支持自动代码生成、代码翻译、自动编写注释等功能</td>
+    <td><a href="https://codegeex.com/" target="_blank">CodeGeeX</a></td>  
+  </tr>
+	<tr>
+    <td>腾讯云AI代码助手</td>
+    <td>腾讯推出的AI编程辅助工具，旨在提高开发者的编码效率</td>
+    <td><a href="https://cloud.tencent.com/product/tic" target="_blank">腾讯云AI代码助手</a></td>  
+  </tr>
+	<tr>
+    <td>iFlyCode</td>
+    <td>科大讯飞推出的智能编程助手</td>
+    <td><a href="https://www.iflytek.com/" target="_blank">iFlyCode</a></td>  
+  </tr>
+	<tr>
+    <td>CodiumAI</td>
+    <td>免费的AI代码测试和分析工具</td>
+    <td><a href="https://codium.ai/" target="_blank">CodiumAI</a></td>  
+  </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

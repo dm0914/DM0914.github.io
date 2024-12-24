@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <style>
+     
+     .sidebar {
+    width: 200px; 
+    height: 100vh;
+    overflow-y: auto;
+    padding-top: 20px;
+    background-color: #f8f9fa; 
+}
+   .no-wrap {
+            white-space: nowrap; 
+        }
+        .logo-container {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px; 
+        }
+
+        .navbar {
+            flex-direction: column !important; 
+            align-items: center;
+            padding: 0; 
+        }
+
+        .navbar-toggler {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .navbar-nav {
+            flex-direction: column;
+            width: 100%; 
+            align-items: flex-start; 
+        }
+
+        .nav-item {
+            width: 50%; 
+            text-align: left; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light sidebar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light px-0">
+                <div class="logo-container">
+                    <a class="navbar-brand d-block mx-auto" href="index.html">
+                        <img src="images/one.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav flex-column w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">首页</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index1.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                AI工具箱
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index1.2.html">AI绘画与图像生成</a></li>
+                                <li><a class="dropdown-item" href="index1.3.html">AI音频</a></li>
+                                <li><a class="dropdown-item" href="index1.4.html">AI视频</a></li>
+                                <li><a class="dropdown-item" href="index1.5.html">数字人</a></li>
+                                <li><a class="dropdown-item" href="index1.6.html">AI辅助编程</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item no-wrap" >
+                            <a class="nav-link" href="index2.html">AI行业报告</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="col py-3">
+            <h2 class="text-center">AI写作与文本生成</h2>
+            <table class="mx-auto">
+                <tr>
+                    <th width="11%">名称</th>
+                    <th width="72%">简介</th>
+                    <th width="17%">链接</th>
+                </tr>
+                <tr>
+                    <td>ChatGPT</td>
+                    <td>世界知名的文本生成工具，适用于内容创作和各种语言任务，从博客文章到客户支持对话，都能提供高效且自然的文案输出。</td>
+                    <td><a href="https://chat.openai.com/" target="_blank">ChatGPT</a></td>  
+                </tr>
+                <tr>
+                    <td>文心一言</td>
+                    <td>百度推出的AI文本生成工具，专注于中文内容生成，适合中国市场的需求。</td>
+                    <td><a href="https://yiyan.baidu.com/" target="_blank">文心一言</a></td>  
+                </tr>
+                <tr>
+                    <td>讯飞绘文</td>
+                    <td>由科大讯飞推出的免费AI写作平台，适合用来写社媒文案、新闻稿、科普文章等追热点内容。</td>
+                    <td><a href="https://zhiwen.xfyun.cn/" target="_blank">讯飞绘文</a></td>  
+                </tr>
+                <tr>
+                    <td>聪明灵犀</td>
+                    <td>一款融合了先进AI技术的写作助手，提供智能化的写作体验，包括智能写作、多场景适用、功能强大等特点。</td>
+                    <td><a href="https://www.congminglingxi.com/" target="_blank">聪明灵犀</a></td>  
+                </tr>
+                <tr>
+                    <td>AI创作家</td>
+                    <td>专为创意写作设计的AI工具，不仅能够生成高质量的内容，还能激发用户的创作灵感。</td>
+                    <td><a href="https://ai-arena.qq.com/" target="_blank">AI创作家</a></td>  
+                </tr>
+                <tr>
+                    <td>Grammarly</td>
+                    <td>一款广受欢迎的在线语法检查工具，提供写作风格优化建议。</td>
+                    <td><a href="https://www.grammarly.com" target="_blank">Grammarly</a></td>  
+                </tr>
+                <tr>
+                    <td>Kimi长文生成器</td>
+                    <td>Kimi推出的长文本AI写作助手，支持生成长达20万字的文本内容，提供高效的写作辅助。</td>
+                    <td><a href="https://ai-bot.cn/kimi-square/" target="_blank">Kimi长文生成器</a></td>  
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
